@@ -15,6 +15,11 @@
 | introduction       | text   | null: false               | 
 | position           | string | null: false               |
 
+### Association
+
+* has_many :health_statuses
+* has_many :comments
+
 
 ## health_statuses テーブル
 
@@ -24,6 +29,11 @@
 | notes              | text       | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
+### Association
+
+- belongs_to :user
+- has_many :comments
+
 ## comments テーブル
 
 | Column             | Type        | Options                        |
@@ -31,3 +41,8 @@
 | content            | text        | null: false                    |
 | health_statuse     | references  | null: false, foreign_key: true |
 | users              | references  | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :health_statuses
+- belongs_to :user
