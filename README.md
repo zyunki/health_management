@@ -53,7 +53,8 @@
 ・５つの体調の状態から選択し投稿
 ・補足情報を文章で追加
 （何かきっかけがあったのか、なぜそうなったのか）　
-![体調管理アプリ](https://github.com/user-attachments/assets/cf4e894c-78e1-415f-a330-266113f10eb8)
+<img width="847" alt="スクリーンショット 2024-08-06 0 35 46" src="https://github.com/user-attachments/assets/fa7f4872-f15a-4c44-aa31-8812d8ad5133">
+
 
 ⭐️ユーザ管理機能
 ・氏名、プロフィール画像、性別、自己紹介文、役職
