@@ -54,6 +54,10 @@ a {
 .logo {
   width: 400px;
 }
+.nav__right {
+  display: flex;
+  gap: 2em; 
+}
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -64,7 +68,7 @@ a {
   border: 1px #87CEFA solid;
   border-radius: 3px;
   transition: 0.4s ease;
-  height:100px;
+  height:80px;
   
 }
 .nav__btn:hover{
