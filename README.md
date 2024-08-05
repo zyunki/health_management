@@ -76,6 +76,10 @@
 https://health-management-xudd.onrender.com
 
 
+## 今後実装したい機能
+
+・商品表示機能（体調が良くない方向けの商品が表示されるように）
+・商品購入機能
 
 # テーブル設計
 
