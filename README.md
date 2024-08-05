@@ -57,6 +57,7 @@
 ・５つの体調の状態から選択し投稿
 ・補足情報を文章で追加
 （何かきっかけがあったのか、なぜそうなったのか）　
+
 ![体調管理アプリ](https://github.com/user-attachments/assets/0cd8190d-019a-4f7a-ba67-6e345fa7cd0c)
 
 
