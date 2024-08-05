@@ -1,3 +1,8 @@
+# オリジナルアプリ
+
+<img width="557" alt="logo" src="https://github.com/user-attachments/assets/f01be728-5b13-403c-87a3-a3c1be9dba3e">
+良い体調を維持し、自ら、人生豊かにしていこう！
+
 # テーブル設計
 
 ## users テーブル
