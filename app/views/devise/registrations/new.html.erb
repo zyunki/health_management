@@ -1,0 +1,80 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">ユーザー新規登録</h2>
+        <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+
+        <div class="field">
+          <%= f.label :email, "メールアドレス" %><br />
+          <%= f.email_field :email, id:"user_email", autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, "パスワード（6文字以上）" %><br />
+          <%= f.password_field :password, id:"user_password", autocomplete: "new-password" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation, "パスワード再入力" %><br />
+          <%= f.password_field :password_confirmation, id:"user_password_confirmation", autocomplete: "new-password" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :name, "氏名" %><br />
+          <%= f.text_area :name, id:"user_name", placeholder:"呼ばれている名前を入力して下さい" %>
+        </div>
+
+<div class='field'>
+  <div class="inline-field">
+    <%= f.label :last_name, "姓(全角)", class: "inline-label" %><br />
+    <%= f.text_field :last_name, id: "last_name", placeholder: "例) 山田", class: "inline-input" %>
+  </div>
+
+  <div class="inline-field">
+    <%= f.label :first_name, "名(全角)", class: "inline-label" %><br />
+    <%= f.text_field :first_name, id: "first_name", placeholder: "例) 陸太郎", class: "inline-input" %>
+  </div>
+</div>
+
+<div class='field'>
+  <div class="inline-field">
+    <%= f.label :last_name_kana, "姓カナ(全角)", class: "inline-label" %><br />
+    <%= f.text_field :last_name_kana, id: "last_name_kana", placeholder: "例) ヤマダ", class: "inline-input" %>
+  </div>
+
+  <div class="inline-field">
+    <%= f.label :first_name_kana, "名カナ(全角)", class: "inline-label" %><br />
+    <%= f.text_field :first_name_kana, id: "first_name_kana", placeholder: "例) リクタロウ", class: "inline-input" %>
+  </div>
+</div>
+
+
+
+           <div class="form-group">
+           <%= f.label :gender, "性別" %><br>
+           <%= f.radio_button :gender, "男" %>
+            <%= f.label :gender, "男", value: "男" %>
+
+           <%= f.radio_button :gender, "女" %>
+           <%= f.label :gender, "女", value: "女" %>
+         </div>
+
+        <div class="field">
+          <%= f.label :introduction, "自己紹介" %><br />
+          <%= f.text_area :introduction, class: :form__text, id:"user_profile", placeholder:"自己PRなど" %>
+        </div>
+
+         <div class="form-group">
+          <%= f.label :position, "役職" %><br>
+          <%= f.select :position, options_for_select([
+             '派遣', 'パート', '嘱託', '正社員', '主任', '班長', '係長', '課長', '部長'
+             ]), { include_blank: '選択してください' }, { class: 'form-control' } %>
+          </div>
+
+        <div class="actions">
+          <%= f.submit "新規登録", class: :form__btn  %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

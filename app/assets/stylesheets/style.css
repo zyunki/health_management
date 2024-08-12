@@ -327,3 +327,55 @@ a {
     width: 100%;
   }
 }
+
+.form-group {
+  margin-bottom: 15px; /* 各フォームフィールドの間隔 */
+}
+
+.form-group label {
+  display: inline-block; /* ラベルをインラインで表示 */
+  margin-bottom: 5px; /* ラベルとフォームフィールドの間隔 */
+  font-weight: bold; /* ラベルを太字にする */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+  width: 100%; /* フォームフィールドをコンテナに対して全幅に */
+  padding: 8px; /* フォームフィールド内のパディング */
+  border: 1px solid #ccc; /* 境界線 */
+  border-radius: 4px; /* 角を丸くする */
+  box-sizing: border-box; /* パディングを含めた幅を考慮 */
+}
+
+.form-group input[type="radio"] {
+  margin-right: 5px; /* ラジオボタンとラベルの間のスペース */
+}
+
+.form-group input[type="submit"],
+.form-group button {
+  background-color: #4CAF50; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  padding: 10px 15px; /* ボタンのパディング */
+  border: none; /* ボタンの境界線をなくす */
+  border-radius: 4px; /* 角を丸くする */
+  cursor: pointer; /* ポインターを手のアイコンに */
+}
+
+.form-group input[type="submit"]:hover,
+.form-group button:hover {
+  background-color: #45a049; /* ホバー時の色 */
+}
+
+.inline-field {
+  display: inline-block;
+  margin-right: 10px;
+}
+.inline-label {
+  width: 100px;
+}
+.inline-input {
+  width: 150px;
+}
